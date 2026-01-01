@@ -1,0 +1,114 @@
+.ai-wrapper {
+  background: radial-gradient(#1a1033 2px, transparent 2px);
+  background-size: 18px 18px;
+  padding: 70px 20px;
+  color: #fff;
+}
+
+.ai-inner {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* TOP */
+.ai-top {
+  max-width: 600px;
+}
+
+.ai-top h2 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  opacity: 0.9;
+}
+
+.ai-top h4 {
+  font-size: 18px;
+  margin: 10px 0;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+.ai-top p {
+  font-size: 14px;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+.ai-top span {
+   color: #EB5629;
+}
+/* IMAGE */
+.ai-image {
+  margin: 40px 0;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.ai-image img {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+}
+
+/* BOTTOM */
+.ai-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 30px;
+  align-items: center;
+}
+
+/* BUTTONS */
+.ai-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.primary {
+  background: #EB5629;
+  border: none;
+  color: #fff;
+}
+
+.outline {
+  background: transparent;
+  border: 1px solid #EB5629;
+  color: #fff;
+}
+
+/* DESCRIPTION */
+.ai-description h4 {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.ai-description p {
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .ai-bottom {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .ai-top h2 {
+    font-size: 26px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

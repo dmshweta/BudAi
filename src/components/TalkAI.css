@@ -1,0 +1,110 @@
+.talkai {
+  position: relative;
+  min-height: 70vh;
+  padding: 80px 20px;
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at 30% 70%, rgba(255, 180, 0, 0.55), transparent 35%),
+    linear-gradient(120deg, #4a1a00, #1a0500);
+}
+
+.talkai-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+/* ROBOT + BUTTON */
+.talkai-robot-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.talkai-robot-wrap img {
+  max-width: 260px;
+  width: 100%;
+  z-index: 2;
+}
+
+/* GLOW UNDER ROBOT */
+.talkai-robot-wrap::after {
+  content: "";
+  position: absolute;
+  bottom: 60px;
+  width: 260px;
+  height: 120px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 150, 0, 0.8),
+    transparent 70%
+  );
+  filter: blur(22px);
+  z-index: 1;
+}
+
+/* BUTTON */
+.talkai-btn {
+	margin-top: -130px;
+	padding: 10px 16px;
+	border-radius: 30px;
+	background: #ff5a00;
+	border: none;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+	transition: 0.3s ease;
+	z-index: 2;
+}
+
+.talkai-btn:hover {
+  background: #ff3f00;
+}
+
+/* TEXT */
+.talkai-text {
+  color: #fff;
+  max-width: 460px;
+}
+.talkai span{
+     font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  color: #fff;
+}
+.talkai-text h2 {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.talkai-text p {
+  font-size: 15px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .talkai-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .talkai-text {
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .talkai-text h2 {
+    font-size: 32px;
+  }
+
+  .talkai-robot-wrap img {
+    max-width: 220px;
+  }
+}
